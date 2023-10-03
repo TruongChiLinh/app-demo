@@ -5,10 +5,14 @@ function Login() {
   const onClickSum = () =>{
     setCount(count + 1)
   }
+  const onClickHieu = () =>{
+    setCount(count - 1)
+  }
   return (
     <React.Fragment>
        <div>Login</div>
-       <button onClick={onClickSum}>An vao day </button>
+       <button onClick={onClickSum}>An vao day la + </button>
+       <button onClick={onClickHieu}>An vao day la - </button>
        <p >{count}</p>
     </React.Fragment>
   )
